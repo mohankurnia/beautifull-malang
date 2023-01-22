@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: local('Satoshi Light'), local('Satoshi-Light'),
+      url('../../assets/fonts/satoshi/Satoshi-Light.woff2') format('woff2'),
+      url('../../assets/fonts/satoshi/Satoshi-Light.woff') format('woff'),
+      url('../../assets/fonts/satoshi/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: local('Satoshi Light'), local('Satoshi-Light'),
+      url('../../assets/fonts/satoshi/Satoshi-Light.woff2') format('woff2'),
+      url('../../assets/fonts/satoshi/Satoshi-Light.woff') format('woff'),
+      url('../../assets/fonts/satoshi/Satoshi-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: local('Satoshi Medium'), local('Satoshi-Medium'),
+      url('../../assets/fonts/satoshi/Satoshi-Medium.woff2') format('woff2'),
+      url('../../assets/fonts/satoshi/Satoshi-Medium.woff') format('woff'),
+      url('../../assets/fonts/satoshi/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('Graphik Light'), local('Graphik-Light'),
+      url('../../assets/fonts/graphik/Graphik-Light.woff2') format('woff2'),
+      url('../../assets/fonts/graphik/Graphik-Light.woff') format('woff'),
+      url('../../assets/fonts/graphik/Graphik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('Graphik Regular'), local('Graphik-Regular'),
+      url('../../assets/fonts/graphik/Graphik-Regular.woff2') format('woff2'),
+      url('../../assets/fonts/graphik/Graphik-Regular.woff') format('woff'),
+      url('../../assets/fonts/graphik/Graphik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../../assets/fonts/graphik/Graphik-Medium.woff2') format('woff2'),
+      url('../../assets/fonts/graphik/Graphik-Medium.woff') format('woff'),
+      url('../../assets/fonts/graphik/Graphik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

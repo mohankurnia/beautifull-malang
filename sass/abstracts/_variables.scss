@@ -1,0 +1,41 @@
+$grid-breakpoints: (
+  xs: 0,
+  xs-1: 320px,
+  // Custom Variable
+  xs-2: 375px,
+  xs-3: 426px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  lg-2: 1064px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxl-2: 1440px,
+);
+
+///////////////////////////////////////
+//Colors
+//Brand Color
+$color-primary: #1E5DBC;
+$color-secondary: #4EB2F9;
+$color-tertiary: #F5F9FE;
+
+//Accents Color
+$color-green: #1EBCB4;
+$color-yellow: #FFB201;
+$color-purple: #A27FFF;
+
+//Text Color
+$color-text-darker: #0F2F64;
+$color-text-dark: #536288;
+$color-text-light: #8B98B8;
+$color-text-lighter: #E1E3E8;
+
+//Base Color
+$color-black: #1E1E1E;
+$color-white: #ffffff;
+
+///////////////////////////////////////
+// Typography
+$font-family-primary: 'Satoshi', sans-serif;
+$font-family-secondary: 'Graphik',  sans-serif;

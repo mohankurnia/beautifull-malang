@@ -1,0 +1,202 @@
+/////////////////////////////////////////
+//Text Body
+// Extra Large
+.text-body-xl {
+  font-family: $font-family-secondary;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: unset;
+
+  &--medium{
+    font-family: $font-family-secondary;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: unset;
+    font-weight: 500;
+  }
+
+  &--mobile{
+    font-family: $font-family-secondary;
+    line-height: 1.6;
+    color: unset;
+    font-size: 1.125rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+// Large
+.text-body-lg {
+  font-family: $font-family-secondary;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: unset;
+
+  &--medium{
+    font-family: $font-family-secondary;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: unset;
+    font-weight: 500;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+// Normal
+.text-body-regular {
+  font-family: $font-family-secondary;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: unset;
+  
+  &--bold{
+    font-family: $font-family-secondary;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: unset;
+    font-weight: 700;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/////////////////////////////////////////
+//Text Button
+// Large
+.btn-lg{
+  font-family: $font-family-secondary;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  @media only screen and (max-width: 576px) {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+}
+
+// Normal
+.btn{
+  font-family: $font-family-secondary;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  @media only screen and (max-width: 576px) {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+}
+
+
+
+/////////////////////////////////////////
+//Text Display
+// Display 1
+.text-display-1 {
+  font-family: $font-family-primary;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: .96;
+  
+  @media only screen and (max-width: 576px) {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: .96;
+  }  
+  @media only screen and (max-width: 375px) {
+    font-size: 3rem;
+  }
+}
+
+// Display 2
+.text-display-2 {
+  font-family: $font-family-primary;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  
+  @media only screen and (max-width: 576px) {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}
+
+// Display 3
+.text-display-3 {
+  font-family: $font-family-primary;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  
+  @media only screen and (max-width: 576px) {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}
+
+/////////////////////////////////////////
+//Blockquote
+blockquote{
+  padding: 3rem 2.5rem;
+  border-left-width: 0.25rem;
+  border-left-color: $color-primary;
+  background-color: $color-tertiary;
+  font-family: $font-family-secondary;
+  color: $color-primary;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  @media only screen and (max-width: 768px) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 1.125rem;
+    padding: 1.5rem;
+  }
+}
+
+
+
+///////////////////////////////////
+/////////////////////////////////////////
+/// Colors
+.color-primary{
+  color: $color-primary;
+}
+.color-secondary{
+  color: $color-secondary;
+}
+.color-tertiary{
+  color: $color-tertiary;
+}
+
+.color-text-darker{
+  color: $color-text-darker;
+}
+.color-text-dark{
+  color: $color-text-dark;
+}
+.color-text-light{
+  color: $color-text-light;
+}
+.color-text-lighter{
+  color: $color-text-lighter;
+}
+
+.color-white{
+  color: $color-white;
+}
