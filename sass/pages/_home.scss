@@ -1,0 +1,670 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  .hero {
+    background-image: url(../../assets/img/illustration/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 25%;
+    min-height: 580px;
+    height: auto;
+
+    margin: 0 5rem;
+    padding: 3.75rem;
+    border-radius: 1.5rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $lg) {
+      margin: 0 1.875rem;
+    }
+
+    @media only screen and (max-width: $sm) {
+      padding: 3.75rem 1.5rem;
+    }
+
+    @media only screen and (max-width: $xs-3) {
+      padding: 2.5rem 0.84375rem;
+      background-position: center;
+      margin: 0 1rem;
+    }
+
+    .hero__title-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+      .hero__title {
+        font-size: 4rem;
+        line-height: 1.6;
+        color: $color-white;
+        font-weight: 700;
+        @media only screen and (max-width: $xs-3) {
+          font-size: 3rem;
+        }
+      }
+      .hero__subtitle {
+        font-size: 2rem;
+        line-height: 1.4;
+        color: $color-white;
+        font-weight: 500;
+        @media only screen and (max-width: $xs-3) {
+          font-size: 1.25rem;
+        }
+      }
+    }
+    .hero__search-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.5rem;
+
+      background: $color-white;
+      border-radius: 0.5rem;
+      @media only screen and (max-width: $xs-3) {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        gap: 1.5rem;
+        align-items: stretch;
+      }
+      .hero__search {
+        color: $color-black;
+        text-indent: 1.25rem;
+        outline: none;
+        border: none;
+        width: 100%;
+
+        &::placeholder {
+          color: $color-text-light;
+        }
+      }
+    }
+  }
+
+  .tours {
+    background-color: $color-secondary;
+    padding: 2.5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media only screen and (max-width: $lg) {
+      padding: 2.5rem 1.875rem;
+    }
+
+    @media only screen and (max-width: $xs-3) {
+      padding: 1.5rem 1rem;
+    }
+
+    .tours__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .tours__head-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: $color-black; 
+        @media only screen and (max-width: $xs-3) {
+          font-size: 1.5rem;
+        }
+      }
+      .tours__head-nav-group {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        .tours__head-nav,
+        .slick-disabled {
+          padding: 0.5rem;
+          border-radius: 50%;
+          max-width: 2.5rem;
+          max-height: 2.5rem;
+          cursor: pointer;
+          background-color: $color-primary;
+          img {
+            min-width: 1.5rem;
+            max-height: 1.5rem;
+            filter: none;
+            opacity: 1;
+          }
+          &.nav--left {
+            transform: rotateY(180deg);
+          }
+          &.slick-disabled {
+            background-color: transparent;
+            img {
+              filter: invert(1);
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+
+    .tours__content {
+      display: flex;
+      gap: 1rem;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .tours__card {
+        max-width: 308px;
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 2rem;
+        background-color: $color-white;
+        border-radius: 1rem;
+        filter: drop-shadow($shadow);
+        @media only screen and (max-width: $xs-2) {
+          max-width: 288px;
+        }
+        .tours__card-head {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+          .tours__card-head-img {
+            img {
+              border-radius: 0.5rem;
+              max-width: 276px;
+              max-height: 154.52px;
+              width: 276px;
+              height: 154.52px;
+              @media only screen and (max-width: $xs-2) {
+                width: 256px;
+              }
+            }
+          }
+          .tours__card-head-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            max-width: 192px;
+          }
+          .tours__card-head-location {
+            font-weight: 500;
+            color: $color-text-light;
+          }
+        }
+        .tours__card-detail {
+          width: 100%;
+          .tours__card-detail__price {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            .text-sub {
+              font-weight: 500;
+              color: $color-text-light;
+            }
+          }
+          button {
+            width: 100%;
+          }
+        }
+      } 
+      
+      .slick-list {
+        margin: 0 -1rem;
+        .slick-slide {
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    .tours__cta {
+      .tours__cta-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+          .tours__cta-img {
+            transform: translateX(0.5rem);
+          }
+        }
+
+        .tours__cta-text {
+          font-weight: 500;
+          color: $color-primary;
+          @media only screen and (max-width: $xs-3) {
+            font-size: 1.25rem;
+          }
+        }
+
+        .tours__cta-img {
+          transition: all ease 0.2s;
+        }
+      }
+    }
+  }
+
+  .destination {
+    background-color: $color-white;
+    padding: 2.5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media only screen and (max-width: $lg) {
+      padding: 2.5rem 1.875rem;
+    }
+
+    @media only screen and (max-width: $xs-3) {
+      padding: 1.5rem 1rem;
+    }
+
+    .destination__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .destination__head-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: $color-black; 
+        @media only screen and (max-width: $xs-3) {
+          font-size: 1.5rem;
+        }
+      }
+      .destination__head-nav-group {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        .destination__head-nav,
+        .slick-disabled {
+          padding: 0.5rem;
+          border-radius: 50%;
+          max-width: 2.5rem;
+          max-height: 2.5rem;
+          cursor: pointer;
+          background-color: $color-primary;
+          img {
+            min-width: 1.5rem;
+            max-height: 1.5rem;
+            filter: none;
+            opacity: 1;
+          }
+          &.nav--left {
+            transform: rotateY(180deg);
+          }
+          &.slick-disabled {
+            background-color: transparent;
+            img {
+              filter: invert(1);
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+
+    .destination__content {
+      display: flex;
+      gap: 1rem;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .slick-track {
+        display: flex;
+        .slick-slide {
+          display: flex !important;
+          height: inherit !important;
+        }
+      }
+      .destination__card {
+        max-width: 308px;
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem;
+        gap: 2rem;
+        height: 100%;
+        background-color: $color-white;
+        border-radius: 1rem;
+        filter: drop-shadow($shadow);
+
+        @media only screen and (max-width: $xs-2) {
+          max-width: 288px;
+        }
+
+        .destination__card-head {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          .destination__card-head-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            .destination__card-head-img {
+              img {
+                border-radius: 0.5rem;
+                max-width: 276px;
+                max-height: 154.52px;
+                width: 276px;
+                height: 154.52px;
+                @media only screen and (max-width: $xs-2) {
+                  width: 256px;
+                }
+              }
+            }
+            .destination__card-head-title {
+              font-size: 1.5rem;
+              font-weight: 600;
+              max-width: 100%;
+            }
+            .destination__card-head-location {
+              font-weight: 500;
+              color: $color-text-light;
+            }
+          }
+          .destination__card-head-desc {
+            color: $color-text-light;
+          }
+        }
+        .destination__card-detail {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          @media only screen and (max-width: $xs-3) {
+            flex-direction: column-reverse;
+            align-items: stretch;
+            gap: 0.5rem;
+          }
+          .destination__card-detail__rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            .destination__card-detail__rating-text {
+              font-size: 1.5rem;
+              font-weight: 600;
+              color: $color-primary;
+              .destination__card-detail__rating-subtext {
+                font-size: 1.25rem;
+                font-weight: 500;
+                color: $color-black;
+              }
+            }
+          }
+          button {
+            width: 100%;
+          }
+        }
+      } 
+
+      .slick-list {
+        margin: 0 -1rem;
+        .slick-slide {
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    .destination__cta {
+      .destination__cta-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+          .destination__cta-img {
+            transform: translateX(0.5rem);
+          }
+        }
+
+        .destination__cta-text {
+          font-weight: 500;
+          color: $color-primary;
+          @media only screen and (max-width: $xs-3) {
+            font-size: 1.25rem;
+          }
+        }
+
+        .destination__cta-img {
+          transition: all ease 0.2s;
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    background-color: $color-secondary;
+    padding: 2.5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media only screen and (max-width: $lg) {
+      padding: 2.5rem 1.875rem;
+    }
+    @media only screen and (max-width: $xs-3) {
+      padding: 1.5rem 1rem;
+    }
+    .testimonial__title {
+      text-align: center;
+      font-size: 2.25rem;
+      font-weight: 700;
+      @media only screen and (max-width: $xs-3) {
+        font-size: 1.5rem;
+        text-align: left;
+      }
+    }
+    .testimonial__content {
+      display: flex;
+      gap: 1.5rem;
+
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .slick-track {
+        display: flex;
+        .slick-slide {
+          height: inherit;
+          display: flex;
+        }
+      }
+      .testimonial__card {
+        display: flex !important;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1.5rem;
+        gap: 2rem;
+
+        background-color: $color-white;
+        box-shadow: $shadow;
+        border-radius: 0.5rem;
+
+        max-width: 410px;
+        min-width: 410px;
+
+        @media only screen and (max-width: $sm) {
+          max-width: 288px;
+          min-width: 288px;
+        }
+        .testimonial__card-text {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          .testimonial__card-profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .testimonial__card-profile__image {
+              max-width: 3.75rem;
+              max-height: 3.75rem;
+              width: auto;
+              height: auto;
+            }
+            .testimonial__card-profile-group {
+              .testimonial__card-profile__name {
+                font-size: 1.5rem;
+                font-weight: 500;
+              }
+              .testimonial__card-profile__job {
+                font-weight: 500;
+                color: $color-text-light;
+              }
+            }
+          }
+        }
+        .testimonial__card-rate {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .testimonial__card-rate-star {
+            display: flex;
+            gap: 0.5rem;
+            @media only screen and (max-width: $xs-3) {
+              max-width: 1rem;
+              max-height: 1rem;
+              width: auto;
+              height: auto;
+            }
+          }
+          .testimonial__card-rate-time {
+            font-size: 0.875rem;
+            color: $color-text-light;
+          }
+        }
+      }
+      .slick-list {
+        margin: 0 -1rem;
+        .slick-slide {
+          padding-left: 1rem;
+        }
+      }
+    }
+
+    .testimonial__nav-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      .testimonial__nav,
+      .slick-disabled {
+        padding: 0.5rem;
+        border-radius: 50%;
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+        cursor: pointer;
+        background-color: $color-primary;
+        img {
+          min-width: 1.5rem;
+          max-height: 1.5rem;
+          filter: none;
+          opacity: 1;
+        }
+        &.nav--left {
+          transform: rotateY(180deg);
+        }
+        &.slick-disabled {
+          background-color: transparent;
+          img {
+            filter: invert(1);
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    background-color: $color-white;
+    padding: 2.5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media only screen and (max-width: $lg) {
+      padding: 2.5rem 1.875rem;
+    }
+    @media only screen and (max-width: $xs-3) {
+      padding: 1.5rem 1rem;
+    }
+    .newsletter__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      padding: 4rem 0;
+      border-radius: 1.5rem;
+      .newsletter__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .newsletter__text-title {
+          font-size: 4rem;
+          font-weight: 700;
+          text-align: center;
+          max-width: 704px;
+          @media only screen and (max-width: $xs-3) {
+            font-size: 2.25rem;
+          }
+        }
+        .newsletter__text-subtitle {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: $color-text-light;
+          text-align: center;
+          max-width: 649px;
+          @media only screen and (max-width: $xs-3) {
+            font-size: 1.25rem;
+          }
+        }
+      }
+      .newsletter__input-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.5rem;
+
+        background: $color-white;
+        border-radius: 0.5rem;
+        box-shadow: $shadow;
+        max-width: 768px;
+        width: 100%;
+        @media only screen and (max-width: $xs-3) {
+          flex-direction: column;
+          padding: 1rem 0.5rem;
+          gap: 1.5rem;
+          align-items: stretch;
+        }
+        .newsletter__input {
+          color: $color-black;
+          text-indent: 1.25rem;
+          outline: none;
+          border: none;
+          width: 100%;
+
+          &::placeholder {
+            color: $color-text-light;
+          }
+        }
+        .newsletter__btn {
+          padding: 1.125rem 2rem;
+        }
+      }
+    }
+  }
+}

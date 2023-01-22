@@ -1,0 +1,83 @@
+// Button Normal
+.btn-normal {
+  padding: 0.75rem 1.25rem;
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+  color: $color-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-black;
+    transition: all ease 0.2s;
+    
+    &:hover {
+      background-color: $color-primary;
+      border-color: transparent;
+      color: $color-white;
+    }
+  }
+}
+
+// Button Medium
+.btn-medium {
+  padding: 1rem 1.5rem;
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+  color: $color-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-black;
+    transition: all ease 0.2s;
+    
+    &:hover {
+      background-color: $color-primary;
+      border-color: transparent;
+      color: $color-white;
+    }
+  }
+}
+
+// Button Large 
+.btn-large {
+  padding: 1rem 2rem;
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+  color: $color-white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-black;
+    transition: all ease 0.2s;
+    
+    &:hover {
+      background-color: $color-primary;
+      border-color: transparent;
+      color: $color-white;
+    }
+  }
+}

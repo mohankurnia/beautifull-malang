@@ -74,27 +74,21 @@
 .btn-lg{
   font-family: $font-family-secondary;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  @media only screen and (max-width: 576px) {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: 0.02em;
-  }
 }
 
 // Normal
 .btn{
   font-family: $font-family-secondary;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.02em;
   @media only screen and (max-width: 576px) {
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.6;
     letter-spacing: 0.02em;
   }
@@ -149,27 +143,6 @@
   }
 }
 
-/////////////////////////////////////////
-//Blockquote
-blockquote{
-  padding: 3rem 2.5rem;
-  border-left-width: 0.25rem;
-  border-left-color: $color-primary;
-  background-color: $color-tertiary;
-  font-family: $font-family-secondary;
-  color: $color-primary;
-  font-size: 1.25rem;
-  line-height: 1.6;
-  @media only screen and (max-width: 768px) {
-    padding: 2rem;
-  }
-  @media only screen and (max-width: 576px) {
-    font-size: 1.125rem;
-    padding: 1.5rem;
-  }
-}
-
-
 
 ///////////////////////////////////
 /////////////////////////////////////////
@@ -180,23 +153,20 @@ blockquote{
 .color-secondary{
   color: $color-secondary;
 }
-.color-tertiary{
-  color: $color-tertiary;
-}
 
-.color-text-darker{
-  color: $color-text-darker;
-}
 .color-text-dark{
   color: $color-text-dark;
 }
 .color-text-light{
   color: $color-text-light;
 }
-.color-text-lighter{
-  color: $color-text-lighter;
-}
 
 .color-white{
   color: $color-white;
+}
+.color-black{
+  color: $color-black;
+}
+.text-highlight {
+  color: $color-primary;
 }

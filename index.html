@@ -6,12 +6,645 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage | Beautifull Malang</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/icon-font.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/icon-font.css">
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Plugins Styles -->
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
 </head>
 <body>
-    <h1 class="text-display-1">Beautifull Malang</h1>
+  <div class="home">
+    <!-- Start::Navbar Component -->
+    <div class="navbar">
+      <a href="#" class="navbar__logo">
+        <img src="/assets/img/logo/logo-beautifulmalang-transparent.png" alt="logo beautifull malang">
+      </a>
+      <div class="navbar__menu">
+        <a href="#" class="navbar__menu-link active">
+          <p class="navbar__menu-text text-body-lg">Home</p>
+        </a>
+        <a href="#" class="navbar__menu-link">
+          <p class="navbar__menu-text text-body-lg">Destination</p>
+        </a>
+        <a href="#" class="navbar__menu-link">
+          <p class="navbar__menu-text text-body-lg">Blog</p>
+        </a>
+      </div>
+      <div class="navbar__btn">
+        <button class="btn btn-normal navbar__btn-1" type="button">Sign In</button>
+        <button class="btn btn-normal btn-secondary navbar__btn-2" type="button">
+          <img src="/assets/img/icons/en-flag-icon.svg" alt="en flag" class="navbar__btn-2__img">
+          EN
+        </button>
+      </div>
+      <div class="navbar__hamburger">
+        <img src="/assets/img/icons/hamburger-icon.svg" alt="hamburger menu">
+      </div>
+      <div class="sidebar">
+        <div class="sidebar__logo-group">
+          <a href="#" class="sidebar__logo">
+            <img src="/assets/img/logo/logo-beautifulmalang-transparent.png" alt="logo beautifull malang">
+          </a>
+          <div class="sidebar__cancel">
+            <img src="/assets/img/icons/cancel-icon.svg" alt="cancel icon">
+          </div>
+        </div>
+        <div class="sidebar__menu">
+          <a href="#" class="sidebar__menu-link active">
+            <p class="sidebar__menu-text text-body-lg">Home</p>
+          </a>
+          <a href="#" class="sidebar__menu-link">
+            <p class="sidebar__menu-text text-body-lg">Destination</p>
+          </a>
+          <a href="#" class="sidebar__menu-link">
+            <p class="sidebar__menu-text text-body-lg">Blog</p>
+          </a>
+        </div>
+        <div class="sidebar__btn">
+          <button class="btn btn-normal sidebar__btn-1" type="button">Sign In</button>
+          <button class="btn btn-normal btn-secondary sidebar__btn-2" type="button">
+            <img src="/assets/img/icons/en-flag-icon.svg" alt="en flag" class="sidebar__btn-2__img">
+            EN
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End::Navbar Component -->
+
+    <!-- Start::Hero Section -->
+    <section class="hero">
+      <div class="hero__title-group">
+        <h1 class="hero__title text-display-1">Beautifull Malang</h1>
+        <h2 class="hero__subtitle text-display-1">Explore incredible things to do around Malang</h2>
+      </div>
+      <div class="hero__search-group">
+        <input type="text" class="hero__search text-body-xl" placeholder="Search Destination">
+        <button class="btn-lg btn-large" type="button">Search</button>
+      </div>
+    </section>
+    <!-- End::Hero Section -->
+
+    <!-- Start::Tours Section -->
+    <section class="tours">
+      <div class="tours__head">
+        <h2 class="tours__head-title">Trending <span class="text-highlight">Tours</span></h2>
+        <div class="tours__head-nav-group">
+          <div class="tours__head-nav nav--left">
+            <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
+          </div>
+          <div class="tours__head-nav nav--right">
+            <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
+          </div>
+        </div>
+      </div>
+      <div class="tours__content">
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-1.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Kampung Warna Warni Tour</p>
+            <p class="tours__card-head-location text-body-regular">Jodipan, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-2.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Coban Rondo Tour</p>
+            <p class="tours__card-head-location text-body-regular">Pujon, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-3.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Kayutangan Tour</p>
+            <p class="tours__card-head-location text-body-regular">Klojen, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-4.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Balekambang Tour</p>
+            <p class="tours__card-head-location text-body-regular">Bantur, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-1.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Kampung Warna Warni Tour</p>
+            <p class="tours__card-head-location text-body-regular">Jodipan, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-2.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Coban Rondo Tour</p>
+            <p class="tours__card-head-location text-body-regular">Pujon, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-3.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Kayutangan Tour</p>
+            <p class="tours__card-head-location text-body-regular">Klojen, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+        <div class="tours__card">
+          <div class="tours__card-head">
+            <div class="tours__card-head-img">
+              <img src="/assets/img/illustration/tours-4.jpg" alt="Tours 1">
+            </div>
+            <p class="tours__card-head-title text-body-xl">Balekambang Tour</p>
+            <p class="tours__card-head-location text-body-regular">Bantur, Malang</p>
+          </div>
+          <div class="tours__card-detail">
+            <p class="tours__card-detail__price text-body-xl">
+              <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
+            </p>
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tours__cta">
+        <a href="#" class="tours__cta-group">
+          <p class="tours__cta-text text-body-lg">View More</p>
+          <img src="/assets/img/icons/arrow-right.svg" alt="arrow" class="tours__cta-img">
+        </a>
+      </div>
+    </section>
+    <!-- End::Tours Section -->
+
+    <!-- Start::Destination Section -->
+    <section class="destination">
+      <div class="destination__head">
+        <h2 class="destination__head-title">Top <span class="text-highlight">Destination</span></h2>
+        <div class="destination__head-nav-group">
+          <div class="destination__head-nav nav--left">
+            <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
+          </div>
+          <div class="destination__head-nav nav--right active">
+            <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
+          </div>
+        </div>
+      </div>
+      <div class="destination__content">
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-1.jpg" alt="Destination 1">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Alun Alun Malang</p>
+              <p class="destination__card-head-location text-body-regular">Klojen, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Alun Alun Malang is the right location to take the kids for a walk. There is a special children's play area, jogging track...</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-2.jpg" alt="Destination 2">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Jatim Park 3</p>
+              <p class="destination__card-head-location text-body-regular">Batu, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Popular amusement park with dinosaur attractions, wax museum, snack bar & technology exhibition...</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-3.jpg" alt="Destination 3">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Museum Angkut</p>
+              <p class="destination__card-head-location text-body-regular">Batu, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Museum Angkut is a modern transportation and tourist attraction museum located in Batu City, East Java, about 20 km from Malang City.</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-4.png" alt="Destination 4">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Pujon Kidul</p>
+              <p class="destination__card-head-location text-body-regular">Pujon, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Pujon Kidul Tourism Village, a place where you can see the sunrise from the top of the hill, ride an ATV or horse, and explore the rice fields</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-1.jpg" alt="Destination 1">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Alun Alun Malang</p>
+              <p class="destination__card-head-location text-body-regular">Klojen, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Alun Alun Malang is the right location to take the kids for a walk. There is a special children's play area, jogging track...</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-2.jpg" alt="Destination 2">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Jatim Park 3</p>
+              <p class="destination__card-head-location text-body-regular">Batu, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Popular amusement park with dinosaur attractions, wax museum, snack bar & technology exhibition...</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-3.jpg" alt="Destination 3">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Museum Angkut</p>
+              <p class="destination__card-head-location text-body-regular">Batu, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Museum Angkut is a modern transportation and tourist attraction museum located in Batu City, East Java, about 20 km from Malang City.</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <div class="destination__card-head">
+            <div class="destination__card-head-group">
+              <div class="destination__card-head-img">
+                <img src="/assets/img/illustration/destination-4.png" alt="Destination 4">
+              </div>
+              <p class="destination__card-head-title text-body-xl">Pujon Kidul</p>
+              <p class="destination__card-head-location text-body-regular">Pujon, Malang</p>
+            </div>
+            <p class="destination__card-head-desc text-body-regular">Pujon Kidul Tourism Village, a place where you can see the sunrise from the top of the hill, ride an ATV or horse, and explore the rice fields</p>
+          </div>
+          <div class="destination__card-detail">
+            <a href="#">
+              <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
+            </a>
+            <div class="destination__card-detail__rating">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon" />
+              <p class="destination__card-detail__rating-text text-body-xl">4.5<span class="destination__card-detail__rating-subtext">/5.0</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="destination__cta">
+        <a href="#" class="destination__cta-group">
+          <p class="destination__cta-text text-body-lg">View More</p>
+          <img src="/assets/img/icons/arrow-right.svg" alt="arrow" class="destination__cta-img">
+        </a>
+      </div>
+    </section>
+    <!-- End::Destination Section -->
+
+    <!-- Start::Testimonial Section -->
+    <div class="testimonial">
+      <h2 class="testimonial__title">What They say about <span class="text-highlight">Malang</span></h2>
+      <div class="testimonial__content">
+        <div class="testimonial__card">
+          <div class="testimonial__card-text">
+            <div class="testimonial__card-profile">
+              <img src="/assets/img/illustration/profile-3.png" alt="Profile 1" class="testimonial__card-profile__image">
+              <div class="testimonial__card-profile-group">
+                <p class="testimonial__card-profile__name text-body-xl">Jean Doe</p>
+                <p class="testimonial__card-profile__job text-body-regular">Videographer</p>
+              </div>
+            </div>
+            <p class="text-body-regular testimonial__card-desc">Alun Alun Malang is very good for relaxing and refreshing the mind. Located in the middle of shops, malls, mosques, hotels and other facilities, this Malang square is very strategic.</p>
+          </div>
+          <div class="testimonial__card-rate">
+            <div class="testimonial__card-rate-star">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+            </div>
+            <div class="testimonial__card-rate-time text-body-regular">6 months ago</div>
+          </div>
+        </div>
+        <div class="testimonial__card">
+          <div class="testimonial__card-text">
+            <div class="testimonial__card-profile">
+              <img src="/assets/img/illustration/profile-2.png" alt="Profile 2" class="testimonial__card-profile__image">
+              <div class="testimonial__card-profile-group">
+                <p class="testimonial__card-profile__name text-body-xl">John Doe</p>
+                <p class="testimonial__card-profile__job text-body-regular">Tourist</p>
+              </div>
+            </div>
+            <p class="text-body-regular testimonial__card-desc">Including the unique and best museum with a large collection of types of transportation - vehicles that have ever existed in Indonesia and the World. Cleanliness of the location is quite good, visitor facilities are also adequate. Staff service is very friendly, the comfort of visitors is very concerned.</p>
+          </div>
+          <div class="testimonial__card-rate">
+            <div class="testimonial__card-rate-star">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+            </div>
+            <div class="testimonial__card-rate-time text-body-regular">5 days ago</div>
+          </div>
+        </div>
+        <div class="testimonial__card">
+          <div class="testimonial__card-text">
+            <div class="testimonial__card-profile">
+              <img src="/assets/img/illustration/profile-3.png" alt="Profile 3" class="testimonial__card-profile__image">
+              <div class="testimonial__card-profile-group">
+                <p class="testimonial__card-profile__name text-body-xl">Ana Watson</p>
+                <p class="testimonial__card-profile__job text-body-regular">Writer</p>
+              </div>
+            </div>
+            <p class="text-body-regular testimonial__card-desc">Cool before going into purchasing, tickets, we have been spoiled with a small mall with a wide variety of food, clothes, toys, etc. When you enter, the rides are even cooler. Try it, you Indonesians come here.</p>
+          </div>
+          <div class="testimonial__card-rate">
+            <div class="testimonial__card-rate-star">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+            </div>
+            <div class="testimonial__card-rate-time text-body-regular">3 hours ago</div>
+          </div>
+        </div>
+        <div class="testimonial__card">
+          <div class="testimonial__card-text">
+            <div class="testimonial__card-profile">
+              <img src="/assets/img/illustration/profile-3.png" alt="Profile 1" class="testimonial__card-profile__image">
+              <div class="testimonial__card-profile-group">
+                <p class="testimonial__card-profile__name text-body-xl">Jean Doe</p>
+                <p class="testimonial__card-profile__job text-body-regular">Videographer</p>
+              </div>
+            </div>
+            <p class="text-body-regular testimonial__card-desc">Alun Alun Malang is very good for relaxing and refreshing the mind. Located in the middle of shops, malls, mosques, hotels and other facilities, this Malang square is very strategic.</p>
+          </div>
+          <div class="testimonial__card-rate">
+            <div class="testimonial__card-rate-star">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+            </div>
+            <div class="testimonial__card-rate-time text-body-regular">6 months ago</div>
+          </div>
+        </div>
+        <div class="testimonial__card">
+          <div class="testimonial__card-text">
+            <div class="testimonial__card-profile">
+              <img src="/assets/img/illustration/profile-2.png" alt="Profile 2" class="testimonial__card-profile__image">
+              <div class="testimonial__card-profile-group">
+                <p class="testimonial__card-profile__name text-body-xl">John Doe</p>
+                <p class="testimonial__card-profile__job text-body-regular">Tourist</p>
+              </div>
+            </div>
+            <p class="text-body-regular testimonial__card-desc">Including the unique and best museum with a large collection of types of transportation - vehicles that have ever existed in Indonesia and the World. Cleanliness of the location is quite good, visitor facilities are also adequate. Staff service is very friendly, the comfort of visitors is very concerned.</p>
+          </div>
+          <div class="testimonial__card-rate">
+            <div class="testimonial__card-rate-star">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+            </div>
+            <div class="testimonial__card-rate-time text-body-regular">5 days ago</div>
+          </div>
+        </div>
+        <div class="testimonial__card">
+          <div class="testimonial__card-text">
+            <div class="testimonial__card-profile">
+              <img src="/assets/img/illustration/profile-3.png" alt="Profile 3" class="testimonial__card-profile__image">
+              <div class="testimonial__card-profile-group">
+                <p class="testimonial__card-profile__name text-body-xl">Ana Watson</p>
+                <p class="testimonial__card-profile__job text-body-regular">Writer</p>
+              </div>
+            </div>
+            <p class="text-body-regular testimonial__card-desc">Cool before going into purchasing, tickets, we have been spoiled with a small mall with a wide variety of food, clothes, toys, etc. When you enter, the rides are even cooler. Try it, you Indonesians come here.</p>
+          </div>
+          <div class="testimonial__card-rate">
+            <div class="testimonial__card-rate-star">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+              <img src="/assets/img/icons/star-icon.svg" alt="star icon">
+            </div>
+            <div class="testimonial__card-rate-time text-body-regular">3 hours ago</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial__nav-group">
+        <div class="testimonial__nav nav--left">
+          <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
+        </div>
+        <div class="testimonial__nav nav--right active">
+          <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
+        </div>
+      </div>
+    </div>
+    <!-- End::Testimonial Section -->
+
+    <!-- Start::Newsletter Section -->
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__text">
+          <h1 class="newsletter__text-title text-display-1">Find your Adventures in <span class="text-highlight">Beautiful of Malang</span></h1>
+          <p class="newsletter__text-subtitle text-body-xl">Don’t wait until tomorrow, discover your adventure now and feel the sensation of closeness to nature around you</p>
+        </div>
+        <div class="newsletter__input-group">
+          <input type="text" class="newsletter__input text-body-xl" placeholder="Enter your email">
+          <button class="newsletter__btn btn-lg btn-large" type="button">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- End::Newsletter Section -->
+
+    <!-- Start::Footer Component -->
+    <div class="footer">
+      <div class="footer__head">
+        <a href="#">
+          <img src="/assets/img/logo/logo-beautifulmalang-transparent.png" alt="logo footer" class="footer__head-image">
+        </a>
+        <div class="footer__head-text">
+          <h2 class="footer__head-text-title">Beautifull Malang</h2>
+          <p class="footer__head-text-subtitle text-display-2">Explore incredible things to do around Malang</p>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <a href="#" class="footer__nav-link active">
+          <p class="footer__nav-text text-body-lg">Home</p>
+        </a>
+        <a href="#" class="footer__nav-link">
+          <p class="footer__nav-text text-body-lg">Destination</p>
+        </a>
+        <a href="#" class="footer__nav-link">
+          <p class="footer__nav-text text-body-lg">Blog</p>
+        </a>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__contact-copyright text-body-lg">Copyright 2023 Mohan Kurnia. All rights reserved.</p>
+        <div class="footer__contact-socmed">
+          <a href="#">
+            <img src="/assets/img/icons/twitter-icon.svg" alt="twitter icon">
+          </a>
+          <a href="#">
+            <img src="/assets/img/icons/facebook-icon.svg" alt="facebook icon">
+          </a>
+          <a href="#">
+            <img src="/assets/img/icons/instagram-icon.svg" alt="instagram icon">
+          </a>
+          <a href="#">
+            <img src="/assets/img/icons/tiktok-icon.svg" alt="tiktok icon">
+          </a>
+          <a href="#">
+            <img src="/assets/img/icons/email-icon.svg" alt="email icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End::Footer Component -->
+  </div>
+  
+  <!-- Plugins Script -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="assets/plugins/slick/slick.js"></script>
+  <!-- Local Script -->
+  <script src="js/home.js"></script>
+  <script src="js/sidebar.js"></script>
 </body>
-</html>
+</html> 

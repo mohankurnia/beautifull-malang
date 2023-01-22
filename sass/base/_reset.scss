@@ -67,7 +67,7 @@ a {
   cursor: pointer;
   transition: all linear .2s;
   &:hover{
-    color: $color-text-darker;
+    color: $color-white;
   }
 }
 
@@ -78,11 +78,6 @@ ul{
 }
 
 // For Pattern and Ornament on All Pages
-.pattern,
-.ornament {
-  pointer-events: none;
-}
-
 // Bold
 .bold{
   font-weight: 600;
@@ -93,12 +88,13 @@ ul{
   font-style: italic;
 }
 
-// Bullet List
-.bullet-list{
-  list-style: disc;
-}
-
-// Numered List
-.numered-list{
-  list-style: decimal;
+// Container
+.container {
+  margin: 0 5rem;
+  @media only screen and (max-width: $md) {
+    margin: 0 1.875rem;
+  }
+  @media only screen and (max-width: $xs-2) {
+    margin: 0 1rem;
+  }
 }
