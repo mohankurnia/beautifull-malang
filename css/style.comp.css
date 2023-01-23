@@ -524,7 +524,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  margin-top: 92.71px; }
+  margin-top: 92.71px;
+  background-color: #ffffff; }
   .home .hero {
     background-image: url(../../assets/img/illustration/hero-image.png);
     background-repeat: no-repeat;
@@ -1053,7 +1054,8 @@ ul {
           padding: 1.125rem 2rem; }
 
 .details {
-  margin-top: 92.71px; }
+  margin-top: 92.71px;
+  background-color: #ffffff; }
   .details .breadcrumbs {
     padding: 1rem 5rem;
     background-color: rgba(251, 133, 0, 0.2); }
@@ -1366,7 +1368,8 @@ ul {
           padding-left: 1rem; }
 
 .destinations {
-  margin-top: 92.71px; }
+  margin-top: 92.71px;
+  background-color: #ffffff; }
   .destinations .search-menu {
     display: flex;
     flex-direction: column;
@@ -1523,7 +1526,8 @@ ul {
           width: 100%; }
 
 .blogs {
-  margin-top: 92.71px; }
+  margin-top: 92.71px;
+  background-color: #ffffff; }
   .blogs .search-menu {
     display: flex;
     flex-direction: column;
