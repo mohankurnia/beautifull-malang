@@ -12,22 +12,23 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Plugins Styles -->
     <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/aos-master/dist/aos.css">
 </head>
 <body>
   <div class="home">
     <!-- Start::Navbar Component -->
-    <div class="navbar">
+    <div class="navbar" data-aos="fade-down">
       <a href="#" class="navbar__logo">
         <img src="/assets/img/logo/logo-beautifulmalang-transparent.png" alt="logo beautifull malang">
       </a>
       <div class="navbar__menu">
-        <a href="#" class="navbar__menu-link active">
+        <a href="/index.html" class="navbar__menu-link active">
           <p class="navbar__menu-text text-body-lg">Home</p>
         </a>
-        <a href="#" class="navbar__menu-link">
+        <a href="/destination.html" class="navbar__menu-link">
           <p class="navbar__menu-text text-body-lg">Destination</p>
         </a>
-        <a href="#" class="navbar__menu-link">
+        <a href="/blogs.html" class="navbar__menu-link">
           <p class="navbar__menu-text text-body-lg">Blog</p>
         </a>
       </div>
@@ -51,13 +52,13 @@
           </div>
         </div>
         <div class="sidebar__menu">
-          <a href="#" class="sidebar__menu-link active">
+          <a href="/index.html" class="sidebar__menu-link active">
             <p class="sidebar__menu-text text-body-lg">Home</p>
           </a>
-          <a href="#" class="sidebar__menu-link">
+          <a href="/destination.html" class="sidebar__menu-link">
             <p class="sidebar__menu-text text-body-lg">Destination</p>
           </a>
-          <a href="#" class="sidebar__menu-link">
+          <a href="/blogs.html" class="sidebar__menu-link">
             <p class="sidebar__menu-text text-body-lg">Blog</p>
           </a>
         </div>
@@ -73,12 +74,12 @@
     <!-- End::Navbar Component -->
 
     <!-- Start::Hero Section -->
-    <section class="hero">
+    <section class="hero" data-aos="zoom-in">
       <div class="hero__title-group">
-        <h1 class="hero__title text-display-1">Beautifull Malang</h1>
-        <h2 class="hero__subtitle text-display-1">Explore incredible things to do around Malang</h2>
+        <h1 class="hero__title text-display-1" data-aos="fade-down" data-aos-delay="300">Beautifull Malang</h1>
+        <h2 class="hero__subtitle text-display-1" data-aos="fade-down" data-aos-delay="400">Explore incredible things to do around Malang</h2>
       </div>
-      <div class="hero__search-group">
+      <div class="hero__search-group" data-aos="zoom-in" data-aos-delay="500">
         <input type="text" class="hero__search text-body-xl" placeholder="Search Destination">
         <button class="btn-lg btn-large" type="button">Search</button>
       </div>
@@ -88,7 +89,7 @@
     <!-- Start::Tours Section -->
     <section class="tours">
       <div class="tours__head">
-        <h2 class="tours__head-title">Trending <span class="text-highlight">Tours</span></h2>
+        <h2 class="tours__head-title" data-aos="fade-right">Trending <span class="text-highlight">Tours</span></h2>
         <div class="tours__head-nav-group">
           <div class="tours__head-nav nav--left">
             <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
@@ -98,7 +99,7 @@
           </div>
         </div>
       </div>
-      <div class="tours__content">
+      <div class="tours__content" data-aos="fade-right" data-aos-delay="200">
         <div class="tours__card">
           <div class="tours__card-head">
             <div class="tours__card-head-img">
@@ -111,7 +112,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -128,7 +129,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -145,7 +146,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -162,7 +163,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -179,7 +180,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -196,7 +197,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -213,7 +214,7 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
@@ -230,14 +231,14 @@
             <p class="tours__card-detail__price text-body-xl">
               <span class="text-highlight">IDR </span>300.000<span class="text-sub text-body-regular">/person</span>
             </p>
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
           </div>
         </div>
       </div>
-      <div class="tours__cta">
-        <a href="#" class="tours__cta-group">
+      <div class="tours__cta" data-aos="zoom-in" data-aos-delay="400">
+        <a href="/destination.html" class="tours__cta-group">
           <p class="tours__cta-text text-body-lg">View More</p>
           <img src="/assets/img/icons/arrow-right.svg" alt="arrow" class="tours__cta-img">
         </a>
@@ -248,7 +249,7 @@
     <!-- Start::Destination Section -->
     <section class="destination">
       <div class="destination__head">
-        <h2 class="destination__head-title">Top <span class="text-highlight">Destination</span></h2>
+        <h2 class="destination__head-title" data-aos="fade-right">Top <span class="text-highlight">Destination</span></h2>
         <div class="destination__head-nav-group">
           <div class="destination__head-nav nav--left">
             <img src="/assets/img/icons/nav-arrow-right.svg" alt="nav arrow">
@@ -258,7 +259,7 @@
           </div>
         </div>
       </div>
-      <div class="destination__content">
+      <div class="destination__content" data-aos="fade-right" data-aos-delay="200">
         <div class="destination__card">
           <div class="destination__card-head">
             <div class="destination__card-head-group">
@@ -271,7 +272,7 @@
             <p class="destination__card-head-desc text-body-regular">Alun Alun Malang is the right location to take the kids for a walk. There is a special children's play area, jogging track...</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -292,7 +293,7 @@
             <p class="destination__card-head-desc text-body-regular">Popular amusement park with dinosaur attractions, wax museum, snack bar & technology exhibition...</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -313,7 +314,7 @@
             <p class="destination__card-head-desc text-body-regular">Museum Angkut is a modern transportation and tourist attraction museum located in Batu City, East Java, about 20 km from Malang City.</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -334,7 +335,7 @@
             <p class="destination__card-head-desc text-body-regular">Pujon Kidul Tourism Village, a place where you can see the sunrise from the top of the hill, ride an ATV or horse, and explore the rice fields</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -355,7 +356,7 @@
             <p class="destination__card-head-desc text-body-regular">Alun Alun Malang is the right location to take the kids for a walk. There is a special children's play area, jogging track...</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -376,7 +377,7 @@
             <p class="destination__card-head-desc text-body-regular">Popular amusement park with dinosaur attractions, wax museum, snack bar & technology exhibition...</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -397,7 +398,7 @@
             <p class="destination__card-head-desc text-body-regular">Museum Angkut is a modern transportation and tourist attraction museum located in Batu City, East Java, about 20 km from Malang City.</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -418,7 +419,7 @@
             <p class="destination__card-head-desc text-body-regular">Pujon Kidul Tourism Village, a place where you can see the sunrise from the top of the hill, ride an ATV or horse, and explore the rice fields</p>
           </div>
           <div class="destination__card-detail">
-            <a href="#">
+            <a href="/details.html">
               <button type="button" class="btn-lg btn-secondary btn-medium">See Details</button>
             </a>
             <div class="destination__card-detail__rating">
@@ -428,8 +429,8 @@
           </div>
         </div>
       </div>
-      <div class="destination__cta">
-        <a href="#" class="destination__cta-group">
+      <div class="destination__cta" data-aos="zoom-in" data-aos-delay="400">
+        <a href="/destination.html" class="destination__cta-group">
           <p class="destination__cta-text text-body-lg">View More</p>
           <img src="/assets/img/icons/arrow-right.svg" alt="arrow" class="destination__cta-img">
         </a>
@@ -439,8 +440,8 @@
 
     <!-- Start::Testimonial Section -->
     <div class="testimonial">
-      <h2 class="testimonial__title">What They say about <span class="text-highlight">Malang</span></h2>
-      <div class="testimonial__content">
+      <h2 class="testimonial__title" data-aos="fade-down">What They say about <span class="text-highlight">Malang</span></h2>
+      <div class="testimonial__content" data-aos="fade-right" data-aos-delay="200">
         <div class="testimonial__card">
           <div class="testimonial__card-text">
             <div class="testimonial__card-profile">
@@ -583,10 +584,10 @@
     <section class="newsletter">
       <div class="newsletter__container">
         <div class="newsletter__text">
-          <h1 class="newsletter__text-title text-display-1">Find your Adventures in <span class="text-highlight">Beautiful of Malang</span></h1>
-          <p class="newsletter__text-subtitle text-body-xl">Don’t wait until tomorrow, discover your adventure now and feel the sensation of closeness to nature around you</p>
+          <h1 class="newsletter__text-title text-display-1" data-aos="zoom-in">Find your Adventures in <span class="text-highlight">Beautiful of Malang</span></h1>
+          <p class="newsletter__text-subtitle text-body-xl" data-aos="fade-down" data-aos-delay="100">Don’t wait until tomorrow, discover your adventure now and feel the sensation of closeness to nature around you</p>
         </div>
-        <div class="newsletter__input-group">
+        <div class="newsletter__input-group" data-aos="zoom-in" data-aos-delay="200">
           <input type="text" class="newsletter__input text-body-xl" placeholder="Enter your email">
           <button class="newsletter__btn btn-lg btn-large" type="button">Subscribe</button>
         </div>
@@ -596,7 +597,7 @@
 
     <!-- Start::Footer Component -->
     <div class="footer">
-      <div class="footer__head">
+      <div class="footer__head" data-aos="zoom-in">
         <a href="#">
           <img src="/assets/img/logo/logo-beautifulmalang-transparent.png" alt="logo footer" class="footer__head-image">
         </a>
@@ -605,14 +606,14 @@
           <p class="footer__head-text-subtitle text-display-2">Explore incredible things to do around Malang</p>
         </div>
       </div>
-      <div class="footer__nav">
-        <a href="#" class="footer__nav-link active">
+      <div class="footer__nav" data-aos="fade-down" data-aos-delay="100">
+        <a href="/index.html" class="footer__nav-link active">
           <p class="footer__nav-text text-body-lg">Home</p>
         </a>
-        <a href="#" class="footer__nav-link">
+        <a href="/destination.html" class="footer__nav-link">
           <p class="footer__nav-text text-body-lg">Destination</p>
         </a>
-        <a href="#" class="footer__nav-link">
+        <a href="/blogs.html" class="footer__nav-link">
           <p class="footer__nav-text text-body-lg">Blog</p>
         </a>
       </div>
@@ -643,8 +644,12 @@
   <!-- Plugins Script -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="assets/plugins/slick/slick.js"></script>
+  <script src="assets/plugins/aos-master/dist/aos.js"></script>
   <!-- Local Script -->
   <script src="js/home.js"></script>
   <script src="js/sidebar.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html> 

@@ -1,0 +1,190 @@
+.destinations {
+  margin-top: 92.71px;
+  .search-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.75rem 0;
+    background-color: $color-secondary;
+
+    height: 140px;
+    position: relative;
+    @media only screen and (max-width: $xs-3) {
+      height: 230px;
+    }
+    .search-menu__title {
+      font-size: 2rem;
+      font-weight: 700;
+      @media only screen and (max-width: 640px) {
+        text-align: center;
+      }
+      @media only screen and (max-width: $xs-3) {
+        max-width: 288px;
+      }
+    }
+  
+    .search-menu__search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.5rem;
+
+      background: $color-white;
+      border-radius: 0.5rem;
+      max-width: 1024px;
+      width: 100%;
+      box-shadow: $shadow;
+
+      position: absolute;
+      top: 103px;
+      @media only screen and (max-width: $lg-2) {
+        max-width: 641px;
+      }
+      @media only screen and (max-width: 640px) {
+        max-width: 500px;
+        top: 116px;
+      }
+      @media only screen and (max-width: $sm) {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        gap: 1.5rem;
+        align-items: stretch;
+        max-width: 365px;
+      }
+      @media only screen and (max-width: $xs-3) {
+        max-width: 288px;
+        top: 155px;
+      }
+      .search-menu__search__input {
+        color: $color-black;
+        text-indent: 1.25rem;
+        outline: none;
+        border: none;
+        width: 100%;
+
+        &::placeholder {
+          color: $color-text-light;
+        }
+      }
+    }
+  }
+
+  .destination__content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    padding: 2.5rem 0;
+    margin: 2.25rem 5rem 0;
+    @media only screen and (max-width: $lg) {
+      margin: 2.25rem 1.875rem 0;
+    }
+    @media only screen and (max-width: $md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: $sm) {
+      margin-top: 7.5rem;
+      grid-template-columns: 1fr;
+    }
+    @media only screen and (max-width: $xs-3) {
+      margin: 4rem 1rem 0;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .destination__card {
+      max-width: 308px;
+
+      display: flex !important;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 1rem;
+      gap: 2rem;
+      height: inherit;
+      background-color: $color-white;
+      border-radius: 1rem;
+      filter: drop-shadow($shadow);
+
+      @media only screen and (max-width: $xs-2) {
+        max-width: 288px;
+      }
+
+      @media only screen and (max-width: $md) {
+        max-width: unset;
+      }
+
+      .destination__card-head {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .destination__card-head-group {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+          .destination__card-head-img {
+            @media only screen and (max-width: $md) {
+              width: 100%;
+            }
+            img {
+              border-radius: 0.5rem;
+              max-width: 276px;
+              max-height: 154.52px;
+              width: 276px;
+              height: 154.52px;
+              @media only screen and (max-width: $md) {
+                max-width: unset;
+                width: 100%;
+              }
+            }
+          }
+          .destination__card-head-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            max-width: 100%;
+          }
+          .destination__card-head-location {
+            font-weight: 500;
+            color: $color-text-light;
+          }
+        }
+        .destination__card-head-desc {
+          color: $color-text-light;
+        }
+      }
+      .destination__card-detail {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        @media only screen and (max-width: 640px) {
+          flex-direction: column-reverse;
+          align-items: stretch;
+          gap: 0.5rem;
+        }
+        .destination__card-detail__rating {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          .destination__card-detail__rating-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-primary;
+            .destination__card-detail__rating-subtext {
+              font-size: 1.25rem;
+              font-weight: 500;
+              color: $color-black;
+            }
+          }
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
