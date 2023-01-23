@@ -2,9 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $color-white;
 
   padding: 1.125rem 5rem;
-  position: relative;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
 
   @media only screen and (max-width: $lg) {
     padding: 1.125rem 1.875rem;
